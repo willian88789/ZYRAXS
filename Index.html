@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário ZYRAXS</title>
+    <link rel="stylesheet" href="formulário.css" type="text/css" media="all" />
+</head>
+<body oncontextmenu="return false;">
+    <img src="banner.png" alt="Banner ZYRAXS" class="banner-img">
+    <img src="ZYRAXS.png" alt="Ícone ZYRAXS" class="icon-img">
+    <h1>Formulário de Alistamento ZYRAXS</h1>
+    <div class="aviso">
+        Preste muita atenção!<br>
+        Responda com informações verdadeiras e corretas.<br>
+    </div>
+    <div id="blocked" class="blocked-message" style="display:none;">
+        <p>Você foi bloqueado de preencher o formulário devido a irregularidades.</p>
+    </div>
+    <div class="form-container" id="form-container" style="display:none;">
+        <form id="zyraxsForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="1" required>
+
+            <label for="jogo">Nome do jogo:</label>
+            <input type="text" id="jogo" name="jogo" required>
+
+            <label for="level">Level (máximo 2600):</label>
+            <input type="number" id="level" name="level" max="2600" required>
+
+            <label for="bounty">Bounty/Honra (opcional - máximo 30.000.000):</label>
+            <input type="number" id="bounty" name="bounty" max="30000000">
+
+            <label for="script">Já usou script?</label>
+            <select id="script" name="script" required>
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="tripulacaoAntes">Já participou de outra tripulação?</label>
+            <select id="tripulacaoAntes" name="tripulacaoAntes" required onchange="mostrarPergunta()">
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <div id="perguntaTripulacao" style="display:none;">
+                <label for="qualTripulacao">Qual?</label>
+                <input type="text" id="qualTripulacao" name="qualTripulacao">
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <button id="discord-button" onclick="entrarNoDiscord()">Entrar no Discord</button>
+    </div>
+
+    <footer>
+        <p>© 2025 Tripulação ZYRAXS — <a href="termos.html">Leia nossos termos</a></p>
+    </footer>
+
+    <script src="verification.js" charset="utf-8"></script>
+</body>
+</html>
