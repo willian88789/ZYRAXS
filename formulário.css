@@ -1,0 +1,119 @@
+body {
+  background: radial-gradient(circle at center, #0d0d0d, #000);
+  color: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+input[type="submit"] {
+  margin-top: 25px;
+  background: #0f0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #0c0;
+}
+
+#discord-button {
+  display: none;
+  margin: 30px auto 0;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #7289da;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+#discord-button:hover {
+  background-color: #5b6eae;
+}
+
+.blocked-message {
+  text-align: center;
+  color: #f55;
+  font-size: 1.3em;
+  margin-top: 50px;
+}
+
+.aviso {
+  background: rgba(255, 255, 0, 0.1);
+  color: #ff0;
+  border: 1px solid #ff0;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #aaa;
+}
+
+footer a {
+  color: #5eaaff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.banner-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center -4vh;
+  border: solid 2px white;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  transform: translateY(-10px);
+  object-fit: cover;
+}
+
+.icon-img {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
